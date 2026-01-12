@@ -1,4 +1,3 @@
-import { Shield } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export function Navigation() {
@@ -29,10 +28,7 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Shield className="w-6 h-6 text-blue-400" />
-            <span className="text-lg">FraudOps</span>
-          </div>
+          <img src="/safe_logo.jpeg" alt="safe-n-scale" className="h-8 w-auto" />
           
           <div className="hidden md:flex items-center gap-6">
             {[

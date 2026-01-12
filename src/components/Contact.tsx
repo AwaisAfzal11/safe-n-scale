@@ -54,7 +54,7 @@ export function Contact() {
                 </a>
                 
                 <a
-                  href="mailto:hello@fraudops.com"
+                  href="mailto:info@safenscale.com"
                   className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-blue-400/30 transition-all group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -62,7 +62,7 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-sm text-white">Email</div>
-                    <div className="text-xs text-white/50">hello@fraudops.com</div>
+                    <div className="text-xs text-white/50">info@safenscale.com</div>
                   </div>
                 </a>
               </div>
