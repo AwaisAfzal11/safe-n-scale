@@ -12,11 +12,24 @@ export function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission (mock)
-    alert("Thank you! We'll be in touch within 24 hours.");
-    setFormData({ name: "", email: "", company: "", message: "" });
+    try {
+      const response = await fetch('/send_email.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json();
+      alert(result.message);
+      if (result.status === 'success') {
+        setFormData({ name: "", email: "", company: "", message: "" });
+      }
+    } catch (error) {
+      alert('An error occurred while sending the message.');
+    }
   };
 
   return (

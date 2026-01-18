@@ -30,7 +30,7 @@ export function Pricing() {
       features: [
         "3-5 detection modules",
         "90-min leakage diagnostic",
-        "Weekly fraud ops review calls",
+        "Bi-weekly fraud ops review calls",
         "Multi-channel alerts (email, SMS, Slack)",
         "Advanced analytics dashboard",
         "Dedicated success manager",
@@ -43,7 +43,7 @@ export function Pricing() {
       features: [
         "All detection modules",
         "Full audit & implementation",
-        "Daily monitoring & tuning",
+        "Weekly monitoring & tuning",
         "Custom integration support",
         "White-label reporting",
         "SLA guarantees",
